@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #4CAF50;
+}
+
+header {
+    padding: 20px 10%;
+    background: #1a1a1a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    background: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+.nav-links a.active {
+    color: #fff;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.hero {
+    display: flex;
+    padding: 80px 10%;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    color: #aaa;
+    margin: 20px 0;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-primary { 
+    background: #4CAF50; 
+    color: white; 
+}
+.btn-secondary { 
+    background: #333; 
+    color: white; 
+    border: 1px solid #444; 
+}
+.btn-outline { 
+    background: transparent; 
+    border: 1px solid #4CAF50; 
+    color: #4CAF50; }
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    border-right: 5px solid #4CAF50;
+    border-bottom: 5px solid #4CAF50;
+}
+
+/* Grid Systems */
+.section-title {
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #4CAF50;
+    margin: 10px auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 10%;
+}
+
+/* Cards */
+.service-card, .project-card {
+    background: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+}
+
+.service-card i {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card-body {
+    padding: 15px 0;
+}
+
+/* Table */
+.education { padding: 0 10%; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #4CAF50;
+    color: black;
+    text-align: left;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #333;
+}
+
+/* Footer & Declaration */
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+}
+
+.declaration {
+    padding: 50px 10%;
+}
+
+.quote-box {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #4CAF50;
+}
+
+.signature {
+    text-align: right;
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #1a1a1a;
+    font-size: 0.8rem;
+    color: #777;
+}
