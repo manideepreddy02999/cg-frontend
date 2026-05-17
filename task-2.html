@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="icon" href="https://plus.unsplash.com/premium_photo-1683936164558-7061805e86d0?q=80&w=784&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./task-2.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center " href="#">
+                <i class="bi bi-bag-check-fill text-primary me-2 fs-3"></i>
+                <span class="fw-bold text-dark">SHOPPING</span><span class="fw-bold text-primary px-2">ZONE</span>
+            </a>
+            
+            <button class="navbar-expand-lg navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active mx-2" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#">Shop</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle mx-2" href="#" id="catDropdown" role="button" data-bs-toggle="dropdown">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link mx-2" href="#">Contact</a></li>
+                </ul>
+                
+                <div class="d-flex align-items-center position-relative me-3 w-25">
+                    <input class="form-control rounded-2 pe-5" type="search" placeholder="Search products...">
+                    <button class="btn btn-primary position-absolute end-0 top-0 bottom-0 px-3 rounded-start-0 rounded-end-2" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <div class="d-flex align-items-center gap-3 ms-2">
+                    <a href="#" class="text-dark position-relative"><i class="bi bi-heart fs-5"></i></a>
+                    <a href="#" class="text-dark position-relative"><i class="bi bi-person fs-4"></i></a>
+                    <a href="#" class="text-dark position-relative">
+                        <i class="bi bi-cart3 fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary" style="font-size: 0.65rem;">3</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div id="heroCarousel" class="carousel slide hero-section p-4 p-md-5 mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators mb-0">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 ps-md-5">
+                            <span class="text-primary fw-bold text-uppercase tracking-wider sm-title" style="font-size: 0.85rem; letter-spacing: 1px;">New Collection</span>
+                            <h1 class="display-4 fw-bold text-dark mt-2 mb-3">Upgrade Your Lifestyle</h1>
+                            <p class="text-muted lead fs-6 mb-4 col-md-10">Discover the latest trends in fashion, electronics, and home essentials. Quality you love, prices you enjoy.</p>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-primary px-4 py-2 fw-semibold">Shop Now</a>
+                                <a href="#" class="btn btn-outline-primary bg-white px-4 py-2 fw-semibold">Explore Deals</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0 d-flex justify-content-center position-relative">
+                            <div class="d-flex align-items-center gap-3 justify-content-center">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&auto=format&fit=crop&q=60" alt="Headphones" class="img-fluid rounded-circle p-1 bg-white shadow-sm" style="width: 140px; height: 100; ">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&auto=format&fit=crop&q=60" alt="Smart Watch" class="img-fluid rounded-circle p-1 bg-white shadow-sm" style="width: 140px; height: 100px; ">
+                                <img   src="https://plus.unsplash.com/premium_photo-1678739395192-bfdd13322d34?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smart Watch" class="img-fluid rounded-circle p-1 bg-white shadow-sm" style="width: 140px; height: 100px; ">                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide-prev>
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide-next>
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="row g-4 py-3 justify-content-between text-center text-sm-start border-bottom pb-5 mb-5">
+            <div class="col-md-3 col-sm-6 d-sm-flex align-items-center gap-3">
+                <div class="bg-light p-3 rounded-circle text-primary d-inline-flex mb-2 mb-sm-0 shadow-sm"><i class="bi bi-truck fs-4"></i></div>
+                <div>
+                    <h6 class="mb-0 fw-bold">Free Shipping</h6>
+                    <small class="text-muted">On orders over $50</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 d-sm-flex align-items-center gap-3">
+                <div class="bg-light p-3 rounded-circle text-success d-inline-flex mb-2 mb-sm-0 shadow-sm"><i class="bi bi-shield-check fs-4"></i></div>
+                <div>
+                    <h6 class="mb-0 fw-bold">Secure Payment</h6>
+                    <small class="text-muted">100% secure payment</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 d-sm-flex align-items-center gap-3">
+                <div class="bg-light p-3 rounded-circle text-warning d-inline-flex mb-2 mb-sm-0 shadow-sm"><i class="bi bi-award fs-4"></i></div>
+                <div>
+                    <h6 class="mb-0 fw-bold">Best Quality</h6>
+                    <small class="text-muted">Top quality products</small>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 d-sm-flex align-items-center gap-3">
+                <div class="bg-light p-3 rounded-circle text-danger d-inline-flex mb-2 mb-sm-0 shadow-sm"><i class="bi bi-headset fs-4"></i></div>
+                <div>
+                    <h6 class="mb-0 fw-bold">24/7 Support</h6>
+                    <small class="text-muted">Dedicated support</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-bold text-dark mb-0">Featured Products</h3>
+            <a href="#" class="btn btn-outline-primary px-3 py-1.5 fs-7  rounded-2">View All Products</a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 mb-5 pb-4">
+            
+            <!-- Product 1 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="product-image-wrapper bg-light  ">
+                        <span class="badge badge-new position-absolute m-2">New</span>
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&auto=format&fit=crop&q=60" class="card-img-top " alt="Men's Casual Sneakers"  style="height: 220px;">
+                    </div>
+                    <div class="card-body p-3 pt-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <h6 class="card-title text-dark fw-semibold mb-1 text-truncate" style="font-size: 0.95rem;">Men's Casual Sneakers</h6>
+                            <p class="card-text text-muted small mb-2 text-truncate-2" style="font-size: 0.8rem;">Lightweight and breathable streetwear shoes designed for daily comfort.</p>
+                            <div class="text-primary fw-bold mb-1" style="font-size: 1.1rem;">$49.99</div>
+                            <div class="mb-3">
+                                <span class="rating-stars text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                                <small class="text-muted ms-1" style="font-size: 0.8rem;">(120)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary w-100 btn-sm d-flex align-items-center justify-content-center gap-2 py-2"><i class="bi bi-cart3"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="product-image-wrapper bg-light  ">
+                        <span class="badge badge-sale position-absolute m-2">Sale</span>
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&auto=format&fit=crop&q=60" class="card-img-top " alt="Smart Watch Series 5"  style="height: 220px;">
+                    </div>
+                    <div class="card-body p-3 pt-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <h6 class="card-title text-dark fw-semibold mb-1 text-truncate" style="font-size: 0.95rem;">Smart Watch Series 5</h6>
+                            <p class="card-text text-muted small mb-2 text-truncate-2" style="font-size: 0.8rem;">Stay connected with advanced fitness tracking and elegant styling.</p>
+                            <div class="mb-1">
+                                <span class="text-danger fw-bold me-2" style="font-size: 1.1rem;">$99.99</span>
+                                <span class="text-muted text-decoration-line-through small">$149.99</span>
+                            </div>
+                            <div class="mb-3">
+                                <span class="rating-stars text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                                <small class="text-muted ms-1" style="font-size: 0.8rem;">(85)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary w-100 btn-sm d-flex align-items-center justify-content-center gap-2 py-2"><i class="bi bi-cart3"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="product-image-wrapper bg-light">
+                        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&auto=format&fit=crop&q=60" class="card-img-top" alt="Travel Backpack"  style="height: 220px;">
+                    </div>
+                    <div class="card-body p-3 pt-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <h6 class="card-title text-dark fw-semibold mb-1 text-truncate" style="font-size: 0.95rem;">Travel Backpack</h6>
+                            <p class="card-text text-muted small mb-2 text-truncate-2" style="font-size: 0.8rem;">Durable water-resistant pack featuring dedicated laptop security blocks.</p>
+                            <div class="text-primary fw-bold mb-1" style="font-size: 1.1rem;">$39.99</div>
+                            <div class="mb-3">
+                                <span class="rating-stars text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                                <small class="text-muted ms-1" style="font-size: 0.8rem;">(60)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary w-100 btn-sm d-flex align-items-center justify-content-center gap-2 py-2"><i class="bi bi-cart3"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="product-image-wrapper bg-light">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&auto=format&fit=crop&q=60" class="card-img-top" alt="Wireless Headphones"  style="height: 220px;">
+                    </div>
+                    <div class="card-body p-3 pt-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <h6 class="card-title text-dark fw-semibold mb-1 text-truncate" style="font-size: 0.95rem;">Wireless Headphones</h6>
+                            <p class="card-text text-muted small mb-2 text-truncate-2" style="font-size: 0.8rem;">Immersive acoustic signature sound engineering with active noise canceling.</p>
+                            <div class="text-primary fw-bold mb-1" style="font-size: 1.1rem;">$59.99</div>
+                            <div class="mb-3">
+                                <span class="rating-stars text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                                <small class="text-muted ms-1" style="font-size: 0.8rem;">(95)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary w-100 btn-sm d-flex align-items-center justify-content-center gap-2 py-2"><i class="bi bi-cart3"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="product-image-wrapper bg-light  ">
+                        <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=400&auto=format&fit=crop&q=60" class="card-img-top"  alt="Men's Polo T-Shirt"  style="height: 220px;">
+                    </div>
+                    <div class="card-body p-3 pt-2 d-flex flex-column justify-content-between">
+                        <div>
+                            <h6 class="card-title text-dark fw-semibold mb-1 text-truncate" style="font-size: 0.95rem;">Men's Polo T-Shirt</h6>
+                            <p class="card-text text-muted small mb-2 text-truncate-2" style="font-size: 0.8rem;">Premium organic cotton blend polo ideal for casual smart setups.</p>
+                            <div class="text-primary fw-bold mb-1" style="font-size: 1.1rem;">$19.99</div>
+                            <div class="mb-3">
+                                <span class="rating-stars text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                                <small class="text-muted ms-1" style="font-size: 0.8rem;">(150)</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary w-100 btn-sm d-flex align-items-center justify-content-center gap-2 py-2"><i class="bi bi-cart3"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>  
+
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 border-bottom pb-4 mb-3">
+                <div class="col-lg-3 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center text-white mb-3" href="#">
+                        <i class="bi bi-bag-check-fill text-primary me-2 fs-4"></i>
+                        <span class="fw-bold text-white">SHOP</span><span class="fw-bold text-primary">ZONE</span>
+                    </a>
+                    <p class="small text-light mb-3 pe-lg-3">Your one-stop shop for the best products at unbeatable prices. Quality you can trust, service you can count on.</p>
+                    <div class="d-flex">
+                        <a href="#" class="footer-social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="mb-3">Customer Service</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h5 class="mb-3">Categories</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Home & Kitchen</a></li>
+                        <li><a href="#">Beauty & Health</a></li>
+                        <li><a href="#">Sports & Outdoors</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p class="small text-light mb-3">Subscribe to get updates on new arrivals and exclusive offers.</p>
+                    <div class="d-flex position-relative">
+                        <input type="email" class="form-control py-2 rounded-end-0 bg-white" placeholder="Enter your email" style="font-size: 0.9rem;">
+                        <button class="btn btn-primary px-3 rounded-start-0 py-2" type="button" style="font-size: 0.9rem;">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 pt-2">
+                <p class="small mb-0 text-muted">&copy; 2026 SHOPZONE. All rights reserved.</p>
+                <div class="d-flex gap-2">
+                    <div class="bg-white rounded px-2 py-1 text-dark fw-bold border" style="font-size: 0.65rem; letter-spacing: 0.5px; cursor: pointer;">VISA</div>
+                    <div class="bg-white rounded px-2 py-1 text-danger fw-bold border" style="font-size: 0.65rem; letter-spacing: 0.5px; cursor: pointer;">MasterCard</div>
+                    <div class="bg-white rounded px-2 py-1 text-primary fw-bold border" style="font-size: 0.65rem; letter-spacing: 0.5px; cursor: pointer;">PayPal</div>
+                    <div class="bg-white rounded px-2 py-1 text-warning fw-bold border" style="font-size: 0.65rem; letter-spacing: 0.5px; cursor: pointer;">AMEX</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

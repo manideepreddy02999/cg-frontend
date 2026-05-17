@@ -1,0 +1,153 @@
+        :root {
+            --primary-blue: #1d4ed8;
+            --dark-blue: #0f172a;
+            --light-bg: #f8fafc;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+        }
+        .btn-primary {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+        .btn-primary:hover {
+            background-color: #1e40af;
+            border-color: #1e40af;
+        }
+        .btn-outline-primary {
+            color: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+        .btn-outline-primary:hover {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+        /* Navbar Styling */
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--dark-blue);
+        }
+        .navbar-brand span {
+            color: var(--primary-blue);
+        }
+        .nav-link {
+            font-weight: 500;
+            color: #475569;
+        }
+        .nav-link.active {
+            color: var(--primary-blue) !important;
+            border-bottom: 2px solid var(--primary-blue);
+        }
+        /* Hero Carousel Styling */
+        .hero-section {
+            background: linear-gradient(135deg, #e0e7ff 0%, #f1f5f9 100%);
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+        .carousel-indicators [data-bs-target] {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--primary-blue);
+        }
+        .carousel-control-prev, .carousel-control-next {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.8;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+        
+        .carousel-control-prev { left: 20px; }
+        .carousel-control-next { right: 20px; }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            filter: invert(1) grayscale(100%) brightness(0);
+            width: 1.2rem;
+        }
+        /* Features Bar */
+        .feature-icon {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+        }
+        /* Product Cards */
+        .product-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            height: 100%;
+        }
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+        .product-image-wrapper {
+            position: relative;
+                /* padding: 2rem; */
+            background-color: #fff;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            height: 220px;
+        }
+        .product-image {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        .badge-new {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #22c55e;
+            padding: 0.35em 0.65em;
+        }
+        .badge-sale {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #ef4444;
+            padding: 0.35em 0.65em;
+        }
+        .rating-stars {
+            color: #f59e0b;
+            font-size: 0.85rem;
+        }
+        /* Footer */
+        footer {
+            background-color: var(--dark-blue);
+            color: #94a3b8;
+        }
+        footer h5 {
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            color: #ffffff;
+        }
+        .footer-social-icon {
+            width: 32px;
+            height: 32px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #334155;
+            border-radius: 50%;
+            color: #94a3b8;
+            margin-right: 8px;
+        }
+        .footer-social-icon:hover {
+            background-color: var(--primary-blue);
+            color: white;
+            border-color: var(--primary-blue);
+        }
