@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager App</title>
+    <link rel="stylesheet" href="./task4.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Task Manager App</h2>
+    
+    <form id="taskForm">
+        <label for="taskName">Task Name</label>
+        <input type="text" id="taskName" required placeholder="Enter task title">
+        
+        <label for="taskDesc">Description</label>
+        <textarea id="taskDesc" required placeholder="Enter task description"></textarea>
+        
+        <button type="submit">Add Task</button>
+    </form>
+
+    <div class="filter-section">
+        <label>Filter Tasks:</label>
+        <input type="text" id="searchKeyword" placeholder="Search by keyword..." oninput="filterTasks()">
+    </div>
+
+    <div id="taskList"></div>
+
+    <hr>
+
+    <div class="weather-section">
+        <h3>Check Weather</h3>
+        <input type="text" id="cityName" placeholder="Enter city name">
+        <button type="button" onclick="getWeather()">Get Weather</button>
+        <div id="weatherDisplay"></div>
+    </div>
+</div>
+
+<script src="./task4.js"></script>
+</body>
+</html>
